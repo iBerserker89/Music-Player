@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Background */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/rocky-mountain-fog-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Player background */
+.music-player {
+    background: rgb(93,8,88);
+    background: linear-gradient(228deg, rgba(93,8,88,1) 0%, rgba(14,211,255,1) 70%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+/* Botões */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+/* Imagem */
+.song-img {
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 60px rgba(255, 26, 26, 0.22);;
+}
+
+
+/* Nome da música e do artista */
+.music-player h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Barra de progresso */
+#progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #f53192;;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+/*  Botões de controle */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+/* Play/Pause */
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #f53192;
+    color: #fff;
+}
+
+
+/* footer */
+#credit {
+    text-align: center;
+    background: #333;
+    
+}
+
+#credit a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+#credit a:hover {
+    color: aqua;
+}
+
+
+/* Media */
+@media only screen and (max-width: 300px) {
+    .container {
+        background: #555;
+    }
+
+    .music-player {
+        width: 80%;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .controls div {
+        width: 40px;
+        height: 40px;
+        margin: 18px;    
+    }
+
+    #credit a {
+        font-size: 0.6em;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+        background: #555;
+    }
+
+    .music-player {
+        width: 80%;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .controls div {
+        width: 40px;
+        height: 40px;
+        margin: 18px;
+        
+    }
+
+    #credit a {
+        font-size: 0.6em;
+    }
+  }
